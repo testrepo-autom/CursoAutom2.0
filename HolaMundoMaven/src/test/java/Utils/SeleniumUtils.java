@@ -36,6 +36,12 @@ public class SeleniumUtils {
         input.sendKeys(data);
     }
 
+    public void LlenarInput(WebElement input, String data)
+    {
+
+        input.sendKeys(data);
+    }
+
     public void loading (WebDriver driver, int timeMiliseconds) throws Exception
     {
         Thread.sleep(timeMiliseconds);

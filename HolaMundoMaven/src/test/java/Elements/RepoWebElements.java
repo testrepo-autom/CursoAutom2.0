@@ -23,4 +23,28 @@ public class RepoWebElements
         return addActividad;
     }
 
+    //Elemento Tipo Actividad
+    public By byTipoActividad =By.xpath("//select/option[@value='3' and contains(text(),'ADMIN-ASISTENCIA A JUNTA')]");
+    public WebElement TipoActividad(WebDriver driver){
+        WebElement tipoActividad = driver.findElement(byTipoActividad);
+        return tipoActividad;
+    }
+
+    //Elemento Input Actividad
+    public By byInputActividad =By.id("titulo-actividades");
+    public WebElement NameActividad(WebDriver driver){
+        WebElement nameActividad = driver.findElement(byInputActividad);
+        return nameActividad;
+    }
+
+    //Elemento Input Actividad
+    public By byFechaActividad =By.xpath("/html/body/div[11]/div[3]/table/tbody/tr[5]/td[5]");
+    public WebElement FechaActividad(WebDriver driver){
+        WebElement fechaActividad = driver.findElement(byFechaActividad);
+        return fechaActividad;
+    }
+
+
+
+
 }

@@ -21,10 +21,11 @@ public class Index
         seleniumUtils.limpiarYLlenarInput(elementsPath.UserInput(driver),Config.user);
         seleniumUtils.clickButton(elementsPath.PasswordInput(driver));
         seleniumUtils.limpiarYLlenarInput(elementsPath.PasswordInput(driver),Config.password);
+        Thread.sleep(5000); //Espera explicita
 
         //Se da click en el Button Submit para enviar el formulario
         seleniumUtils.clickButton(elementsPath.ButtonSingIn(driver));
-        Thread.sleep(3000); //Espera explicita
+        Thread.sleep(5000); //Espera explicita
 
     }
 }

@@ -11,9 +11,15 @@ public class Config
     private static String URL_Dev = "http://automationpractice.com/index.php";
     public static String URL_DRAGANDDROP="https://jqueryui.com/droppable/";
 
+
     //Credenciales
     public static String user ="EX425960";
     public static String password="30pR2929";
+
+    //Files
+    public static String filepath = "src/main/resources/Files/actividades.xlsx";
+    public static String nameSheets="Sheet1";
+
 
     public static WebDriver navegadorChrome ()
     {
