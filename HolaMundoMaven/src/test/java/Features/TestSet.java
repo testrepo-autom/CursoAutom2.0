@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class MiPrimerTest
+public class TestSet
 {
     private static WebDriver driver;
 
@@ -18,7 +18,7 @@ public class MiPrimerTest
     {
         //System.setProperty("webdriver.gecko.driver","src/main/resources/Drivers/FirefoxDrivers/geckodriver.exe");
         //driver =new FirefoxDriver();
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         //driver.get("https://www.amazon.com/");
 
         System.setProperty("webdriver.chrome.driver","src/main/resources/Drivers/ChromeDriver/chromedriver.exe");
