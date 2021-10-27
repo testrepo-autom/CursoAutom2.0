@@ -37,14 +37,70 @@ public class RepoWebElements
         return nameActividad;
     }
 
-    //Elemento Input Actividad
-    public By byFechaActividad =By.xpath("/html/body/div[11]/div[3]/table/tbody/tr[5]/td[5]");
-    public WebElement FechaActividad(WebDriver driver){
-        WebElement fechaActividad = driver.findElement(byFechaActividad);
-        return fechaActividad;
+    //Elemento Input TestActividad
+    public By byFechaInActividad =By.xpath("//div/input[@id='fechaPrueba0']");
+    public WebElement FechaInActividad(WebDriver driver){
+        WebElement fechaInActividad = driver.findElement(byFechaInActividad);
+        return fechaInActividad;
     }
 
+    //Elemento lista desplegable Horas _Ini
+    public By bySelectItem = By.id("txtHorasIni0");
+    public WebElement SelectItem (WebDriver driver)
+    {
+        WebElement selectItem = driver.findElement(bySelectItem);
+        return selectItem;
+    }
 
+    //txtHorasFin0
+    public By bySelectItemFin = By.id("txtHorasFin0");
+    public WebElement SelectItemFin (WebDriver driver)
+    {
+        WebElement selectItemF = driver.findElement(bySelectItemFin);
+        return selectItemF;
+    }
+
+    //txtMinutosFin0
+    public By byInputMin =By.id("txtMinutosFin0");
+    public WebElement InputMin(WebDriver driver){
+        WebElement inputMin = driver.findElement(byInputMin);
+        return inputMin;
+    }
+     // UserActivity
+     public By byUserAct =By.xpath("//div/a[@class='dropdown-toggle']");
+    public WebElement UserAct(WebDriver driver){
+        WebElement userAct = driver.findElement(byUserAct);
+        return userAct;
+    }
+
+    //EmpEX425960 UserSelect
+    public By byUserSelect =By.id("EmpEX425960");
+    public WebElement UserSelect(WebDriver driver){
+        WebElement userSelect = driver.findElement(byUserSelect);
+        return userSelect;
+    }
+
+    // BTn Cerrar
+
+    public By byBtnCerrar =By.xpath("//a/strong/span[@title='Cerrar']");
+    public WebElement BtnCerrarct(WebDriver driver){
+        WebElement btnCerrar = driver.findElement(byBtnCerrar);
+        return btnCerrar;
+    }
+
+    //comentario
+    public By byComment =By.id("comentario");
+    public WebElement Comment(WebDriver driver){
+        WebElement commentAct = driver.findElement(byComment);
+        return commentAct;
+    }
+
+    //btnGuardarActividad
+    public By byGuardar =By.id("btnGuardarActividad");
+    public WebElement GuardaAct(WebDriver driver){
+        WebElement guardaAct= driver.findElement(byGuardar);
+        return guardaAct;
+    }
 
 
 }

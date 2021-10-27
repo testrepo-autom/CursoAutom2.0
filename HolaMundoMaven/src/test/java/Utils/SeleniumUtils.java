@@ -20,10 +20,6 @@ public class SeleniumUtils {
         element.click();
     }
 
-    public void clearInput(WebElement element)
-    {
-        element.clear();
-    }
 
     public void LimpiarInput(WebElement element)
     {

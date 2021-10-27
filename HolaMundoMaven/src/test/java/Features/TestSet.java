@@ -36,13 +36,13 @@ public class TestSet
         inputBusqueda.sendKeys("Alexa");
         WebElement searchButton = driver.findElement(By.id("nav-search-submit-button"));
         searchButton.click();
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         WebElement comboSelectfe = driver.findElement(By.id("a-autoid-0-announce"));
         comboSelectfe.click();
         WebElement Selectfeindex = driver.findElement(By.id("s-result-sort-select_2"));
         Selectfeindex.click();
         //inputBusqueda.submit(); a-link-normal a-text-normal
-        Thread.sleep(4000);
+        Thread.sleep(2000);
     }
 
     @After

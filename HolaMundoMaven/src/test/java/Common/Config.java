@@ -19,6 +19,7 @@ public class Config
     //Files
     public static String filepath = "src/main/resources/Files/actividades.xlsx";
     public static String nameSheets="Sheet1";
+    public static int actRonda=5;
 
 
     public static WebDriver navegadorChrome ()
